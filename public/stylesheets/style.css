@@ -1,8 +1,51 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#signInPanel {
+    float: right;
+    border: 2px solid #777;
+    background-color: #EEE;
+    width: 270px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    margin-right:40px;
+ 
 }
-
-a {
-  color: #00B7FF;
+.btn-local{
+    color:#fff;
+    background-color:#CEA678;
+    border-color:rgba(0,0,0,0.2)
+}
+.btn-local:hover,
+.btn-local:focus,
+.btn-local:active,
+.btn-local.active,
+.open>.dropdown-toggle.btn-local{
+    color:#fff;
+    background-color:#AC7F4B;
+    border-color:rgba(0,0,0,0.2);
+}
+.btn-local:active,
+.btn-local.active,
+.open>.dropdown-toggle.btn-local{
+    background-image:none
+}
+.btn-local.disabled,
+.btn-local[disabled],
+fieldset[disabled] .btn-local,
+.btn-local.disabled:hover,
+.btn-local[disabled]:hover,
+fieldset[disabled] .btn-local:hover,
+.btn-local.disabled:focus,
+.btn-local[disabled]:focus,
+fieldset[disabled] .btn-local:focus,
+.btn-local.disabled:active,
+.btn-local[disabled]:active,
+fieldset[disabled] .btn-local:active,
+.btn-local.disabled.active,
+.btn-local[disabled].active,
+fieldset[disabled] .btn-local.active{
+    background-color:#AC7F4B;
+    border-color:rgba(0,0,0,0.2);
+}
+.btn-local .badge{
+    color:#AC7F4B;
+    background-color:#fff;
 }
