@@ -5,9 +5,9 @@ app.config([
 '$urlRouterProvider',
 function($stateProvider, $urlRouterProvider) {
   $stateProvider
-    .state('home', {
-    url: '/home',
-    templateUrl: 'templates/home.html'
+    .state('index', {
+    url: '',
+    templateUrl: 'templates/index.html'
     })
     .state('luncher', {
       url: '/luncher',
@@ -22,5 +22,5 @@ function($stateProvider, $urlRouterProvider) {
   templateUrl: 'templates/registration.html'
 });
     
-  $urlRouterProvider.otherwise('login');
+  $urlRouterProvider.otherwise('index');
 }]);
