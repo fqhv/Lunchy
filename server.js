@@ -3,8 +3,13 @@ var app         = express();                 // define our app using express
 var path = require('path');
 var bodyParser  = require('body-parser');
 var mongoose    = require('mongoose');
+require('./models/User');
+require('./config/passport');
 var routes = require('./routes/index');
+var passport = require('passport');
 var port = process.env.PORT || 8000;
+
+mongoose.connect('mongodb://admin:admin@ds061454.mongolab.com:61454/lunchy');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -14,7 +19,7 @@ app.set('view engine', 'ejs');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 //app.use(cookieParser());
 //app.use(logger('dev'));
-//app.use(passport.initialize());
+app.use(passport.initialize());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
